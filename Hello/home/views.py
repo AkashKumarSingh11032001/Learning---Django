@@ -7,7 +7,7 @@ def index(request):
         'var2':'Suwar'
     }
     # return HttpResponse("This is home page")
-    return render(request,'main.html',context)
+    return render(request,'index.html',context)
 def about(request):
     return HttpResponse("This is about page")
 def service(request):
