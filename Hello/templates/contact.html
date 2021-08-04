@@ -24,9 +24,10 @@
         <label for="phone" class="form-label">Phone Number</label>
         <input type="Number" class="form-control" id="phone" name = "phone" placeholder="Enter Your Phone Number" required>
     </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Verify Me</label>
+    <div class="mb-3 ">
+        {% comment %} <input type="desc" class="form-check-input" id="desc"> {% endcomment %}
+        <label for="desc" class="form-label">Tell us more about</label>
+        <textarea class="form-control" for="desc"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     </form>
