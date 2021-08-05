@@ -12,6 +12,6 @@ class Contact(models.Model):
     desc = models.TextField(blank=True)
     date = models.DateField()
 
-#---> for using name of a person in admin page !
-def __str__(self):
-    return self.name
+    #---> for using name of a person in admin page !
+    def __str__(self):
+        return self.name
