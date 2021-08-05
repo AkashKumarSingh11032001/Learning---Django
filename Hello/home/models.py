@@ -11,3 +11,7 @@ class Contact(models.Model):
     phone = models.CharField(max_length=122)
     desc = models.TextField(blank=True)
     date = models.DateField()
+
+#---> for using name of a person in admin page !
+def __str__(self):
+    return self.name
