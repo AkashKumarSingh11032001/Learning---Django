@@ -28,7 +28,7 @@ def contact(request):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         desc = request.POST.get('desc')
-        contact = Contact(name, email, phone, desc, date=datetime.today())
+        contact = Contact(name=name, email=email, phone=phone, desc=desc, date = datetime.today())
         contact.save()
 
 
